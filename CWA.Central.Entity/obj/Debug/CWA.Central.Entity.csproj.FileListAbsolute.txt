@@ -1,0 +1,15 @@
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\bin\Debug\CWA.Central.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\bin\Debug\CWA.Central.Entity.pdb
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.pdb
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.csprojResolveAssemblyReference.cache
+C:\PROJETOS\CWACentral\CWA.Central.Entity\bin\Debug\CWA.Central.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Central.Entity\bin\Debug\CWA.Central.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.csprojResolveAssemblyReference.cache
+C:\PROJETOS\CWACentral\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.pdb
+C:\TEMP\Git\CWA.Central.Entity\bin\Debug\CWA.Central.Entity.dll
+C:\TEMP\Git\CWA.Central.Entity\bin\Debug\CWA.Central.Entity.pdb
+C:\TEMP\Git\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.csprojResolveAssemblyReference.cache
+C:\TEMP\Git\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.dll
+C:\TEMP\Git\CWA.Central.Entity\obj\Debug\CWA.Central.Entity.pdb

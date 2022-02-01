@@ -1,0 +1,1969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:24098/ServiceCWA.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:24098/ServiceCWA.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" />
+  <xs:element name="GetItemProdutoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemProdutoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetItemProdutoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrecoProdutoAgregadoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrecoProdutoAgregadoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrecoProdutoAgregadoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormaPagamentoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDFormaPag" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormaPagamentoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFormaPagamentoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPagamentoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDTipoPagto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPagamentoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoPagamentoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoProdutoAgregadoFULL">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoProdutoAgregadoFULLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSincronizacaoProdutoAgregadoFULLResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoProdutoAgregadoTerceiro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoProdutoAgregadoTerceiroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSincronizacaoProdutoAgregadoTerceiroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MAXIPAGO_VendaSimplesCartao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrProcessorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrfraudCheck" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrReferenceNum" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCartao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrValidade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCVV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrValor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrParcela" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrTipoPacelamento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MAXIPAGO_VendaSimplesCartaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MAXIPAGO_VendaSimplesCartaoResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MAXIPAGO_GetVendaPaymentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrRequestId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrPaymentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MAXIPAGO_GetVendaPaymentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MAXIPAGO_GetVendaPaymentIdResult" nillable="true" type="q2:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarAssinaturaIntegracao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrDadosPessoa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosEndereco" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosPagamento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosGateway" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarAssinaturaIntegracaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GravarAssinaturaIntegracaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarPedidoIntegracao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrDadosPS" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosTEL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosENDER" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosPED" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosITEM" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosDEB" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDadosGateway" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pintEditora" type="xs:int" />
+        <xs:element minOccurs="0" name="pintUsuario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarPedidoIntegracaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GravarPedidoIntegracaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerDadosDoAssinanteCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintCD_CONTABIL_PESSOA" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerDadosDoAssinanteCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerDadosDoAssinanteCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerCargoCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerCargoCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerCargoCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerEstadoCivilCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerEstadoCivilCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerEstadoCivilCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerGrauInstrucaoCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerGrauInstrucaoCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerGrauInstrucaoCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerNacionalidadeCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerNacionalidadeCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerNacionalidadeCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerNaturalidadeCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerNaturalidadeCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerNaturalidadeCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerProfissaoCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerProfissaoCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerProfissaoCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerRamoAtividadeCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerRamoAtividadeCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerRamoAtividadeCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidarLoginCentral">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstruser" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrpwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidarLoginCentralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetValidarLoginCentralResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarDadosDoAssinanteCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ST_TP_PESSOA" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="NM_PESSOA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NM_RESPONSAVEL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_IDENTIDADE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NM_ORGAO_EMISSOR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DT_EMISSAO" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ST_ESTADO_CIVIL" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="DT_NASC_FUND" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="NM_FANTASIA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_INSCR_MUN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_INSCR_EST" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CD_RAMO" nillable="true" type="xs:short" />
+        <xs:element minOccurs="0" name="DS_NOME_ABREV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CD_GRUPO_AFINIDADE" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="CD_TP_TRATAMENTO" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="CD_CARGO" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="CD_GRAU_INSTRUCAO" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="CD_NACIONALIDADE" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="CD_NATURALIDADE" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="CD_PROFISSAO" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NM_SOBRENOME" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_CPF_RESP" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarDadosDoAssinanteCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetAlterarDadosDoAssinanteCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerTelefoneAssinanteCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerTelefoneAssinanteCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerTelefoneAssinanteCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIncluirTelefoneAssinanteCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="ST_TP_TELEFONE" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="NU_DDD" nillable="true" type="xs:short" />
+        <xs:element minOccurs="0" name="NU_TEL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_RAMAL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DS_OBS" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_DDI" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIncluirTelefoneAssinanteCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetIncluirTelefoneAssinanteCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarTelefoneAssinanteCentral">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="ST_TP_TELEFONE" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="NU_DDD" nillable="true" type="xs:short" />
+        <xs:element minOccurs="0" name="NU_TEL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_RAMAL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DS_OBS" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NU_DDI" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarTelefoneAssinanteCentralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetAlterarTelefoneAssinanteCentralResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeletarTelefoneAssinanteCentral">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeletarTelefoneAssinanteCentralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDeletarTelefoneAssinanteCentralResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerEmailDoAssinanteCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerEmailDoAssinanteCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerEmailDoAssinanteCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIncluirEmailDoAssinanteCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ST_SITUACAO" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="ST_EMAIL_PRINCIPAL" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="CD_TIPO_EMAIL" type="xs:int" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIncluirEmailDoAssinanteCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetIncluirEmailDoAssinanteCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarEmailDoAssinanteCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ST_SITUACAO" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="ST_EMAIL_PRINCIPAL" nillable="true" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="CD_TIPO_EMAIL" type="xs:int" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarEmailDoAssinanteCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetAlterarEmailDoAssinanteCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeletarEmailDoAssinanteCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeletarEmailDoAssinanteCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDeletarEmailDoAssinanteCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerTipoEmailCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerTipoEmailCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerTipoEmailCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerGrupoAfinidadeCentralJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerGrupoAfinidadeCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerGrupoAfinidadeCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerGrupoAfinidadeTipoCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintTipo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerGrupoAfinidadeTipoCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerGrupoAfinidadeTipoCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReadTextFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrPathFile" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReadTextFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReadTextFileResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerRedeSocialCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerRedeSocialCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerRedeSocialCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIncluirRedeSocialCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="DS_REDE_SOCIAL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CD_TIPO_REDE_SOCIAL" type="xs:int" />
+        <xs:element minOccurs="0" name="DS_USUARIO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetIncluirRedeSocialCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetIncluirRedeSocialCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarRedeSocialCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="DS_REDE_SOCIAL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CD_TIPO_REDE_SOCIAL" type="xs:int" />
+        <xs:element minOccurs="0" name="DS_USUARIO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_TOKEN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAlterarRedeSocialCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetAlterarRedeSocialCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeletarRedeSocialCentralService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="NU_SEQ" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="pbolAbrirTransacao" type="xs:boolean" />
+        <xs:element minOccurs="0" name="pbolFecharConexao" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeletarRedeSocialCentralServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDeletarRedeSocialCentralServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSincronizacaoCampanhaPlanoPrecoCorreio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrURLPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrVetorCampPlano" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSincronizacaoCampanhaPlanoPrecoCorreioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetSincronizacaoCampanhaPlanoPrecoCorreioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaWebCorreioJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintTipo" type="xs:int" />
+        <xs:element minOccurs="0" name="pintProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintCampanha" type="xs:int" />
+        <xs:element minOccurs="0" name="pintCortesia" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaWebCorreioJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCargaWebCorreioJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdutoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdutoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetProdutoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSincronizacaoCampanhaPlanoPrecoJC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrURLPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrVetorCampPlano" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSincronizacaoCampanhaPlanoPrecoJCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetSincronizacaoCampanhaPlanoPrecoJCResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormaExpedicaoProdutoAgregadoJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFormaExpedicaoProdutoAgregadoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFormaExpedicaoProdutoAgregadoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAcessoProcedureJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrDS_EMAIL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAcessoProcedureJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAcessoProcedureJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BRASPAG_VendaSimplesCartao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrRequestId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrProviderPagamento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrNomeComprador" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrValor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrParcela" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCartao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrNomeCompradorImpressoCartao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrValidade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCVV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrBandeira" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrIdentificadorVenda" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BRASPAG_VendaSimplesCartaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BRASPAG_VendaSimplesCartaoResult" nillable="true" type="q3:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusContrato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrCodAssinante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCodContrato" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusContratoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetStatusContratoResult" nillable="true" type="q4:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusContratoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrCodAssinante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCodContrato" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStatusContratoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetStatusContratoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginValidoMirante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginValidoMiranteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetLoginValidoMiranteResult" nillable="true" type="q5:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarteiraClubeMiranteJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrCodAssinante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCodContrato" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarteiraClubeMiranteJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCarteiraClubeMiranteJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarteiraClubeMirante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrCodAssinante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCodContrato" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCarteiraClubeMiranteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCarteiraClubeMiranteResult" nillable="true" type="q6:ClubeAssinanteEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsomeWebServiceDinamico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrSoapSTR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrFormatParametro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrUrlWSclient" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMetodoNomeWSClient" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrUriSoap" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrAccept" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="pdicParametros" nillable="true" type="q7:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsomeWebServiceDinamicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsomeWebServiceDinamicoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsomeApiQualityGoiania">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ptrsURL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsomeApiQualityGoianiaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsomeApiQualityGoianiaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVersaoWS">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVersaoWSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVersaoWSResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BRASPAG_GetVendaMerchantOrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrRequestId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantOrderId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BRASPAG_GetVendaMerchantOrderIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BRASPAG_GetVendaMerchantOrderIdResult" nillable="true" type="q8:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BRASPAG_GetVendaPaymentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrRequestId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrPaymentId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BRASPAG_GetVendaPaymentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BRASPAG_GetVendaPaymentIdResult" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGeraNotaVA_GO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrTipoEndPointClient" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrEndPointClient" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrBanco" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrServidor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDataInicio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDataFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrPathLog" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGeraNotaVA_GOResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGeraNotaVA_GOResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDadosContratoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrCodAssinante" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCodContrato" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDadosContratoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDadosContratoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRamoAtividadeJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintTipo" type="xs:int" />
+        <xs:element minOccurs="0" name="pintSituacao" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRamoAtividadeJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRamoAtividadeJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRamoAtividade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintTipo" type="xs:int" />
+        <xs:element minOccurs="0" name="pintSituacao" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRamoAtividadeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetRamoAtividadeResult" nillable="true" type="q10:ArrayOfRamoAtividadeEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboClientejcJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboClientejcJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboClientejcJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboClientejc">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboClientejcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboClientejcResult" nillable="true" type="q11:ArrayOfCuboClienteJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboAssinaturajcJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psDtInicioInic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psDtInicioFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboAssinaturajcJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboAssinaturajcJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboAssinaturajc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psDtInicioInic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psDtInicioFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboAssinaturajcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboAssinaturajcResult" nillable="true" type="q12:ArrayOfCuboAssinaturaJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboRecibojcJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psDtInicioInic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psDtInicioFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboRecibojcJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboRecibojcJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboRecibojc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psDtInicioInic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psDtInicioFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboRecibojcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboRecibojcResult" nillable="true" type="q13:ArrayOfCuboReciboJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdutojcJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdutojcJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboProdutojcJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdutojc">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdutojcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboProdutojcResult" nillable="true" type="q14:ArrayOfCuboProdutoJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdAgregjcJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdAgregjcJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboProdAgregjcJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdAgregjc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboProdAgregjcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboProdAgregjcResult" nillable="true" type="q15:ArrayOfCuboProdAgregJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboTipoRecJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboTipoRecJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboTipoRecJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboTiposRecjc">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboTiposRecjcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboTiposRecjcResult" nillable="true" type="q16:ArrayOfCuboTiposRecJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboMovRecJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psDtInicioInic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psDtInicioFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboMovRecJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCuboMovRecJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboMovRecjc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="psDtInicioInic" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psDtInicioFim" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="psCdcontabil" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCuboMovRecjcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="GetCuboMovRecjcResult" nillable="true" type="q17:ArrayOfCuboMovRecJCEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConteudoDestaque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrPathConteudo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrPathImgMKT" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConteudoDestaqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConteudoDestaqueResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConteudoPromocao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrPathConteudo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrPathImgMKT" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConteudoPromocaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConteudoPromocaoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConteudoDetalhe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrPathConteudo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrPathImgMKT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDPlano" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConteudoDetalheResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConteudoDetalheResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMontarBannerDestaque">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMontarBannerDestaqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMontarBannerDestaqueResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRamoAtividadeListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintTipoRamo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRamoAtividadeListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRamoAtividadeListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrecoCampanhaPlanoProdutoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCampaha" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDPlano" type="xs:int" />
+        <xs:element minOccurs="0" name="pintProduto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrecoCampanhaPlanoProdutoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrecoCampanhaPlanoProdutoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoLogradouroListJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoLogradouroListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoLogradouroListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetViewLogrEntityJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrCEP" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetViewLogrEntityJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetViewLogrEntityJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCodRoteirizacaoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDLogr" type="xs:int" />
+        <xs:element minOccurs="0" name="pintNumeroResid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCodRoteirizacaoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCodRoteirizacaoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParametroGlobalWEBJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParametroGlobalWEBJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetParametroGlobalWEBJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBandeiraCartaoListJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBandeiraCartaoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBandeiraCartaoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdmCartaoListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintBandeira" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdmCartaoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAdmCartaoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdmCobraGateWayJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDAdmCartao" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAdmCobraGateWayJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAdmCobraGateWayJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBandeiraCartaoListNovoJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBandeiraCartaoListNovoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBandeiraCartaoListNovoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidarListaNegraJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="pObjEnt" nillable="true" type="q18:ListaNegraEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidarListaNegraJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetValidarListaNegraJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContabilContratoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintCTR" type="xs:int" />
+        <xs:element minOccurs="0" name="pintDVCTR" type="xs:int" />
+        <xs:element minOccurs="0" name="pstrSerieCTR" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContabilContratoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetContabilContratoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParametrosPlanoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDPlano" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParametrosPlanoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetParametrosPlanoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoAssinaturaListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoAssinaturaListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoAssinaturaListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPagamentoListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDTipoAssinatura" type="xs:int" />
+        <xs:element minOccurs="0" name="pintTipoEntrega" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPagamentoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoPagamentoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBancoDebitoListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProdudo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBancoDebitoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBancoDebitoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarAssinaturaService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="ObjPS" nillable="true" type="q19:DadosPessoaEntity" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="ObjDE" nillable="true" type="q20:DadosEntregaEntity" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="ObjPG" nillable="true" type="q21:DadosPagamentoEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarAssinaturaServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GravarAssinaturaServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarAbandonoService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrDOC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrEmail" nillable="true" type="xs:string" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="pObjEnt" nillable="true" type="q22:AbandonoEntity" />
+        <xs:element minOccurs="0" name="pintEtapa" type="xs:int" />
+        <xs:element minOccurs="0" name="pintStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pstrNuSerieCTR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pintNuCTR" type="xs:int" />
+        <xs:element minOccurs="0" name="pintNuDvCTR" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravarAbandonoServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GravarAbandonoServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAbandonoLojaService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrDOC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pintTipo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAbandonoLojaServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAbandonoLojaServiceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMailAPI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlBasePOST" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrAPIKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDomain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrFromMail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrToMail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrSubject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pintTipoEmail" type="xs:int" />
+        <xs:element minOccurs="0" name="pstrPathAnexo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrFileAnexo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendMailAPIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendMailAPIResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginUsuarioJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrSenha" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLoginUsuarioJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLoginUsuarioJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCamp" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCampanhaListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanoCampanhaJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanoCampanhaJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPlanoCampanhaJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaPlanoWEBJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaPlanoWEBJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCampanhaPlanoWEBJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravaCampanhaPlanoWEB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="ObjEnt" nillable="true" type="q23:CampanhaPlanoWEBEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GravaCampanhaPlanoWEBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GravaCampanhaPlanoWEBResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtualizaCampanhaPlanoWEB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="ObjEnt" nillable="true" type="q24:CampanhaPlanoWEBEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtualizaCampanhaPlanoWEBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AtualizaCampanhaPlanoWEBResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCampanhaPlanoWEB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="ObjEnt" nillable="true" type="q25:CampanhaPlanoWEBEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCampanhaPlanoWEBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCampanhaPlanoWEBResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalDestaque">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTotalDestaqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTotalDestaqueResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGravarRegistroBoletoBradesco">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" minOccurs="0" name="pObjRegistro" nillable="true" type="q26:BoletoRegistroOnLineEntity" />
+        <xs:element minOccurs="0" name="pstrPathCertificado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrSenhaCertificado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrURLEndPointBanco" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetGravarRegistroBoletoBradescoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetGravarRegistroBoletoBradescoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ESITEF_VendaAutomaticaTransacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantUsn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrTipoParcelamento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrValor" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrParcela" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrBandeira" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrIdentificadorVenda" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ESITEF_VendaAutomaticaTransacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ESITEF_VendaAutomaticaTransacaoResult" nillable="true" type="q27:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ESITEF_VendaAutomaticaPagamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pstrUrlPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrContentType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrMerchantKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrnit" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrNumeroCartao" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrDataValidade" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pstrCVV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ESITEF_VendaAutomaticaPagamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ESITEF_VendaAutomaticaPagamentoResult" nillable="true" type="q28:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerContratosCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintCD_CONTABIL_PESSOA" type="xs:int" />
+        <xs:element minOccurs="0" name="pstrDS_EMAIL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="plngNU_CPF" type="xs:long" />
+        <xs:element minOccurs="0" name="plngNU_CNPJ" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLerContratosCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLerContratosCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImprimirContratosCentralJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintCD_CONTABIL_PESSOA" type="xs:int" />
+        <xs:element minOccurs="0" name="pstrNUSERIECTR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pintNUCTR" type="xs:int" />
+        <xs:element minOccurs="0" name="pbyteNUDVCTR" type="xs:unsignedByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImprimirContratosCentralJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetImprimirContratosCentralJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaFormaPagamentoListJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaFormaPagamentoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCargaFormaPagamentoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaTipoPagamentoListJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaTipoPagamentoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCargaTipoPagamentoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaTipoEntregaListJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaTipoEntregaListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCargaTipoEntregaListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaTipoAssinaturaListJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCargaTipoAssinaturaListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCargaTipoAssinaturaListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaPlanoListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDCanal" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaPlanoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCampanhaPlanoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaPrecoListJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCampanha" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDPlano" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaPrecoListJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCampanhaPrecoListJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanoComercialJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDPlano" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlanoComercialJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPlanoComercialJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoAssinaturaEntregaJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintTipoEntrega" type="xs:int" />
+        <xs:element minOccurs="0" name="pintTipoAssinatura" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoAssinaturaEntregaJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoAssinaturaEntregaJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoCampanhaPlanoPrecoFULL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCamp" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoCampanhaPlanoPrecoFULLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSincronizacaoCampanhaPlanoPrecoFULLResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoCampanhaPlanoTerceiro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCamp" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDPlano" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSincronizacaoCampanhaPlanoTerceiroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSincronizacaoCampanhaPlanoTerceiroResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetViewLogrEntityIDJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDLogr" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetViewLogrEntityIDJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetViewLogrEntityIDJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaEntJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDCamp" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCampanhaEntJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCampanhaEntJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPessoaJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPessoaJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoPessoaJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSexoPessoaJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSexoPessoaJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSexoPessoaJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPessoaJuridicaJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTipoPessoaJuridicaJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTipoPessoaJuridicaJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBancoBoletoJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBancoBoletoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBancoBoletoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdutoAgregadoJSON">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdutoAgregadoJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetProdutoAgregadoJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdutoAgregadoIDJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProdutoAgregadoIDJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetProdutoAgregadoIDJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemProdutoIDJSON">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pintIDProduto" type="xs:int" />
+        <xs:element minOccurs="0" name="pintIDItem" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItemProdutoIDJSONResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetItemProdutoIDJSONResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

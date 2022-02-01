@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D350992-03CE-4198-B2F0-2E8347B38426}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWA.Venda.Entity</RootNamespace>
+    <AssemblyName>CWA.Venda.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCargaWebCorreio.cs" />
+    <Compile Include="clsContratoDependente.cs" />
+    <Compile Include="clsContratoEndereco.cs" />
+    <Compile Include="clsContratoPeriodo.cs" />
+    <Compile Include="clsContratoPessoa.cs" />
+    <Compile Include="clsDebitoProdutoAgreg.cs" />
+    <Compile Include="clsEnderecoProdutoAgreg.cs" />
+    <Compile Include="clsFormaExpedicao.cs" />
+    <Compile Include="clsGatewayPagamento.cs" />
+    <Compile Include="clsAdmCartao.cs" />
+    <Compile Include="clsAbandono.cs" />
+    <Compile Include="clsAnoVencimentoCartao.cs" />
+    <Compile Include="clsBanco.cs" />
+    <Compile Include="clsBancoEditora.cs" />
+    <Compile Include="clsBandeiraCartao.cs" />
+    <Compile Include="clsBoletoEndereco.cs" />
+    <Compile Include="clsBoletoMensagem.cs" />
+    <Compile Include="clsBoletoParametro.cs" />
+    <Compile Include="clsBoletoRecibo.cs" />
+    <Compile Include="clsBoletoRegistroOnLine.cs" />
+    <Compile Include="clsCampanha.cs" />
+    <Compile Include="clsCampanhaPlano.cs" />
+    <Compile Include="clsCampanhaPlanoIntegracao.cs" />
+    <Compile Include="clsCampanhaPlanoWEB.cs" />
+    <Compile Include="clsCampanhaPreco.cs" />
+    <Compile Include="clsContratoAssinante.cs" />
+    <Compile Include="clsCuboAssinaturaJC.cs" />
+    <Compile Include="clsCuboClienteJC.cs" />
+    <Compile Include="clsCuboMovRecJC.cs" />
+    <Compile Include="clsCuboProdAgregJC.cs" />
+    <Compile Include="clsCuboProdutoJC.cs" />
+    <Compile Include="clsCuboReciboJC.cs" />
+    <Compile Include="clsCuboTiposRecJC.cs" />
+    <Compile Include="clsDadosEntrega.cs" />
+    <Compile Include="clsDadosPagamento.cs" />
+    <Compile Include="clsClubeAssinante.cs" />
+    <Compile Include="clsExtra.cs" />
+    <Compile Include="clsFormaPagamento.cs" />
+    <Compile Include="clsDadosPessoa.cs" />
+    <Compile Include="clsItemPedidoProdutoAgreg.cs" />
+    <Compile Include="clsItemProduto.cs" />
+    <Compile Include="clsListaNegra.cs" />
+    <Compile Include="clsLogInterfaceWEB.cs" />
+    <Compile Include="clsParametroGlobal.cs" />
+    <Compile Include="clsParametroGlobalED.cs" />
+    <Compile Include="clsPessoaCadastro.cs" />
+    <Compile Include="clsPessoaEmail.cs" />
+    <Compile Include="clsPessoaProdutoAgreg.cs" />
+    <Compile Include="clsPessoaTelefone.cs" />
+    <Compile Include="clsPlanoComercial.cs" />
+    <Compile Include="clsCampanhaPlanoPreco.cs" />
+    <Compile Include="clsPlanoComercialWeb.cs" />
+    <Compile Include="clsPrecoCampanhaPlanoProduto.cs" />
+    <Compile Include="clsPrecoProdutoAgreg.cs" />
+    <Compile Include="clsProduto.cs" />
+    <Compile Include="clsProdutoItemPrecoAgreg.cs" />
+    <Compile Include="clsRamoAtividade.cs" />
+    <Compile Include="clsRetornoAPIRest.cs" />
+    <Compile Include="clsRetornoJSON.cs" />
+    <Compile Include="clsSessionParmPlano.cs" />
+    <Compile Include="clsSexo.cs" />
+    <Compile Include="clsStatusContrato.cs" />
+    <Compile Include="clsTelefoneProdutoAgreg.cs" />
+    <Compile Include="clsTipoAssinatura.cs" />
+    <Compile Include="clsTipoAssinaturaEntrega.cs" />
+    <Compile Include="clsTipoEntrega.cs" />
+    <Compile Include="clsTipoJuridico.cs" />
+    <Compile Include="clsTipoLogr.cs" />
+    <Compile Include="clsTipoPagamento.cs" />
+    <Compile Include="clsTipoPessoa.cs" />
+    <Compile Include="clsUsuarioLogin.cs" />
+    <Compile Include="clsPedidoProdutoAgreg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

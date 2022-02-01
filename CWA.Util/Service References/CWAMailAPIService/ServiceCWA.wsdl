@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceCWA" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:24098/ServiceCWA.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:24098/ServiceCWA.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:24098/ServiceCWA.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:24098/ServiceCWA.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceCWA_BRASPAG_VendaSimplesCartao_InputMessage">
+    <wsdl:part name="parameters" element="tns:BRASPAG_VendaSimplesCartao" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_BRASPAG_VendaSimplesCartao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BRASPAG_VendaSimplesCartaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetStatusContrato_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusContrato" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetStatusContrato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusContratoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetStatusContratoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusContratoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetStatusContratoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusContratoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetLoginValidoMirante_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginValidoMirante" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetLoginValidoMirante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLoginValidoMiranteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCarteiraClubeMiranteJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarteiraClubeMiranteJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCarteiraClubeMiranteJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarteiraClubeMiranteJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCarteiraClubeMirante_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarteiraClubeMirante" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCarteiraClubeMirante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCarteiraClubeMiranteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_ConsomeWebServiceDinamico_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsomeWebServiceDinamico" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_ConsomeWebServiceDinamico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsomeWebServiceDinamicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_ConsomeApiQualityGoiania_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsomeApiQualityGoiania" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_ConsomeApiQualityGoiania_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsomeApiQualityGoianiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetVersaoWS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoWS" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetVersaoWS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_BRASPAG_GetVendaMerchantOrderId_InputMessage">
+    <wsdl:part name="parameters" element="tns:BRASPAG_GetVendaMerchantOrderId" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_BRASPAG_GetVendaMerchantOrderId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BRASPAG_GetVendaMerchantOrderIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_BRASPAG_GetVendaPaymentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:BRASPAG_GetVendaPaymentId" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_BRASPAG_GetVendaPaymentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BRASPAG_GetVendaPaymentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_SetGeraNotaVA_GO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetGeraNotaVA_GO" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_SetGeraNotaVA_GO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetGeraNotaVA_GOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetDadosContratoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDadosContratoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetDadosContratoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDadosContratoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetRamoAtividadeJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRamoAtividadeJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetRamoAtividadeJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRamoAtividadeJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetRamoAtividade_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRamoAtividade" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetRamoAtividade_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRamoAtividadeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboClientejcJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboClientejcJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboClientejcJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboClientejcJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboClientejc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboClientejc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboClientejc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboClientejcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboAssinaturajcJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboAssinaturajcJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboAssinaturajcJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboAssinaturajcJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboAssinaturajc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboAssinaturajc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboAssinaturajc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboAssinaturajcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboRecibojcJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboRecibojcJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboRecibojcJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboRecibojcJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboRecibojc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboRecibojc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboRecibojc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboRecibojcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdutojcJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdutojcJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdutojcJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdutojcJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdutojc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdutojc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdutojc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdutojcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdAgregjcJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdAgregjcJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdAgregjcJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdAgregjcJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdAgregjc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdAgregjc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboProdAgregjc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboProdAgregjcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboTipoRecJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboTipoRecJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboTipoRecJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboTipoRecJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboTiposRecjc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboTiposRecjc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboTiposRecjc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboTiposRecjcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboMovRecJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboMovRecJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboMovRecJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboMovRecJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboMovRecjc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboMovRecjc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCuboMovRecjc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCuboMovRecjcResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetConteudoDestaque_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConteudoDestaque" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetConteudoDestaque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConteudoDestaqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetConteudoPromocao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConteudoPromocao" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetConteudoPromocao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConteudoPromocaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetConteudoDetalhe_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConteudoDetalhe" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetConteudoDetalhe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConteudoDetalheResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetMontarBannerDestaque_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMontarBannerDestaque" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetMontarBannerDestaque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMontarBannerDestaqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetRamoAtividadeListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRamoAtividadeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetRamoAtividadeListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRamoAtividadeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetPrecoCampanhaPlanoProdutoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrecoCampanhaPlanoProdutoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetPrecoCampanhaPlanoProdutoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrecoCampanhaPlanoProdutoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetTipoLogradouroListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoLogradouroListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetTipoLogradouroListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoLogradouroListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetViewLogrEntityJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewLogrEntityJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetViewLogrEntityJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetViewLogrEntityJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCodRoteirizacaoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCodRoteirizacaoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetCodRoteirizacaoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCodRoteirizacaoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetParametroGlobalWEBJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParametroGlobalWEBJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetParametroGlobalWEBJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParametroGlobalWEBJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetBandeiraCartaoListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandeiraCartaoListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetBandeiraCartaoListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandeiraCartaoListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetAdmCartaoListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmCartaoListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetAdmCartaoListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmCartaoListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetAdmCobraGateWayJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmCobraGateWayJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetAdmCobraGateWayJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdmCobraGateWayJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetBandeiraCartaoListNovoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandeiraCartaoListNovoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetBandeiraCartaoListNovoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBandeiraCartaoListNovoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetValidarListaNegraJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValidarListaNegraJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetValidarListaNegraJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValidarListaNegraJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetContabilContratoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContabilContratoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetContabilContratoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContabilContratoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetParametrosPlanoJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParametrosPlanoJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetParametrosPlanoJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParametrosPlanoJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetTipoAssinaturaListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoAssinaturaListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetTipoAssinaturaListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoAssinaturaListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetTipoPagamentoListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoPagamentoListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetTipoPagamentoListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTipoPagamentoListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetBancoDebitoListJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBancoDebitoListJSON" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetBancoDebitoListJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBancoDebitoListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GravarAssinaturaService_InputMessage">
+    <wsdl:part name="parameters" element="tns:GravarAssinaturaService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GravarAssinaturaService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GravarAssinaturaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GravarAbandonoService_InputMessage">
+    <wsdl:part name="parameters" element="tns:GravarAbandonoService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GravarAbandonoService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GravarAbandonoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetAbandonoLojaService_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAbandonoLojaService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_GetAbandonoLojaService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAbandonoLojaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_SendMailAPI_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailAPI" />
+  </wsdl:message>
+  <wsdl:message name="IServiceCWA_SendMailAPI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMailAPIResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceCWA">
+    <wsdl:operation name="BRASPAG_VendaSimplesCartao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/BRASPAG_VendaSimplesCartao" message="tns:IServiceCWA_BRASPAG_VendaSimplesCartao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/BRASPAG_VendaSimplesCartaoResponse" message="tns:IServiceCWA_BRASPAG_VendaSimplesCartao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusContrato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetStatusContrato" message="tns:IServiceCWA_GetStatusContrato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetStatusContratoResponse" message="tns:IServiceCWA_GetStatusContrato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusContratoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetStatusContratoJSON" message="tns:IServiceCWA_GetStatusContratoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetStatusContratoJSONResponse" message="tns:IServiceCWA_GetStatusContratoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginValidoMirante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetLoginValidoMirante" message="tns:IServiceCWA_GetLoginValidoMirante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetLoginValidoMiranteResponse" message="tns:IServiceCWA_GetLoginValidoMirante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarteiraClubeMiranteJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCarteiraClubeMiranteJSON" message="tns:IServiceCWA_GetCarteiraClubeMiranteJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCarteiraClubeMiranteJSONResponse" message="tns:IServiceCWA_GetCarteiraClubeMiranteJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarteiraClubeMirante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCarteiraClubeMirante" message="tns:IServiceCWA_GetCarteiraClubeMirante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCarteiraClubeMiranteResponse" message="tns:IServiceCWA_GetCarteiraClubeMirante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsomeWebServiceDinamico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/ConsomeWebServiceDinamico" message="tns:IServiceCWA_ConsomeWebServiceDinamico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/ConsomeWebServiceDinamicoResponse" message="tns:IServiceCWA_ConsomeWebServiceDinamico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsomeApiQualityGoiania">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/ConsomeApiQualityGoiania" message="tns:IServiceCWA_ConsomeApiQualityGoiania_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/ConsomeApiQualityGoianiaResponse" message="tns:IServiceCWA_ConsomeApiQualityGoiania_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVersaoWS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetVersaoWS" message="tns:IServiceCWA_GetVersaoWS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetVersaoWSResponse" message="tns:IServiceCWA_GetVersaoWS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BRASPAG_GetVendaMerchantOrderId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/BRASPAG_GetVendaMerchantOrderId" message="tns:IServiceCWA_BRASPAG_GetVendaMerchantOrderId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/BRASPAG_GetVendaMerchantOrderIdResponse" message="tns:IServiceCWA_BRASPAG_GetVendaMerchantOrderId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BRASPAG_GetVendaPaymentId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/BRASPAG_GetVendaPaymentId" message="tns:IServiceCWA_BRASPAG_GetVendaPaymentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/BRASPAG_GetVendaPaymentIdResponse" message="tns:IServiceCWA_BRASPAG_GetVendaPaymentId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGeraNotaVA_GO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/SetGeraNotaVA_GO" message="tns:IServiceCWA_SetGeraNotaVA_GO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/SetGeraNotaVA_GOResponse" message="tns:IServiceCWA_SetGeraNotaVA_GO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDadosContratoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetDadosContratoJSON" message="tns:IServiceCWA_GetDadosContratoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetDadosContratoJSONResponse" message="tns:IServiceCWA_GetDadosContratoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRamoAtividadeJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetRamoAtividadeJSON" message="tns:IServiceCWA_GetRamoAtividadeJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetRamoAtividadeJSONResponse" message="tns:IServiceCWA_GetRamoAtividadeJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRamoAtividade">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetRamoAtividade" message="tns:IServiceCWA_GetRamoAtividade_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetRamoAtividadeResponse" message="tns:IServiceCWA_GetRamoAtividade_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboClientejcJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboClientejcJSON" message="tns:IServiceCWA_GetCuboClientejcJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboClientejcJSONResponse" message="tns:IServiceCWA_GetCuboClientejcJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboClientejc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboClientejc" message="tns:IServiceCWA_GetCuboClientejc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboClientejcResponse" message="tns:IServiceCWA_GetCuboClientejc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboAssinaturajcJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboAssinaturajcJSON" message="tns:IServiceCWA_GetCuboAssinaturajcJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboAssinaturajcJSONResponse" message="tns:IServiceCWA_GetCuboAssinaturajcJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboAssinaturajc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboAssinaturajc" message="tns:IServiceCWA_GetCuboAssinaturajc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboAssinaturajcResponse" message="tns:IServiceCWA_GetCuboAssinaturajc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboRecibojcJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboRecibojcJSON" message="tns:IServiceCWA_GetCuboRecibojcJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboRecibojcJSONResponse" message="tns:IServiceCWA_GetCuboRecibojcJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboRecibojc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboRecibojc" message="tns:IServiceCWA_GetCuboRecibojc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboRecibojcResponse" message="tns:IServiceCWA_GetCuboRecibojc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdutojcJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdutojcJSON" message="tns:IServiceCWA_GetCuboProdutojcJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdutojcJSONResponse" message="tns:IServiceCWA_GetCuboProdutojcJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdutojc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdutojc" message="tns:IServiceCWA_GetCuboProdutojc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdutojcResponse" message="tns:IServiceCWA_GetCuboProdutojc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdAgregjcJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdAgregjcJSON" message="tns:IServiceCWA_GetCuboProdAgregjcJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdAgregjcJSONResponse" message="tns:IServiceCWA_GetCuboProdAgregjcJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdAgregjc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdAgregjc" message="tns:IServiceCWA_GetCuboProdAgregjc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboProdAgregjcResponse" message="tns:IServiceCWA_GetCuboProdAgregjc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboTipoRecJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboTipoRecJSON" message="tns:IServiceCWA_GetCuboTipoRecJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboTipoRecJSONResponse" message="tns:IServiceCWA_GetCuboTipoRecJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboTiposRecjc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboTiposRecjc" message="tns:IServiceCWA_GetCuboTiposRecjc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboTiposRecjcResponse" message="tns:IServiceCWA_GetCuboTiposRecjc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboMovRecJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboMovRecJSON" message="tns:IServiceCWA_GetCuboMovRecJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboMovRecJSONResponse" message="tns:IServiceCWA_GetCuboMovRecJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboMovRecjc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboMovRecjc" message="tns:IServiceCWA_GetCuboMovRecjc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCuboMovRecjcResponse" message="tns:IServiceCWA_GetCuboMovRecjc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConteudoDestaque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetConteudoDestaque" message="tns:IServiceCWA_GetConteudoDestaque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetConteudoDestaqueResponse" message="tns:IServiceCWA_GetConteudoDestaque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConteudoPromocao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetConteudoPromocao" message="tns:IServiceCWA_GetConteudoPromocao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetConteudoPromocaoResponse" message="tns:IServiceCWA_GetConteudoPromocao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConteudoDetalhe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetConteudoDetalhe" message="tns:IServiceCWA_GetConteudoDetalhe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetConteudoDetalheResponse" message="tns:IServiceCWA_GetConteudoDetalhe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontarBannerDestaque">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetMontarBannerDestaque" message="tns:IServiceCWA_GetMontarBannerDestaque_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetMontarBannerDestaqueResponse" message="tns:IServiceCWA_GetMontarBannerDestaque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRamoAtividadeListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetRamoAtividadeListJSON" message="tns:IServiceCWA_GetRamoAtividadeListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetRamoAtividadeListJSONResponse" message="tns:IServiceCWA_GetRamoAtividadeListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrecoCampanhaPlanoProdutoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetPrecoCampanhaPlanoProdutoJSON" message="tns:IServiceCWA_GetPrecoCampanhaPlanoProdutoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetPrecoCampanhaPlanoProdutoJSONResponse" message="tns:IServiceCWA_GetPrecoCampanhaPlanoProdutoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoLogradouroListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetTipoLogradouroListJSON" message="tns:IServiceCWA_GetTipoLogradouroListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetTipoLogradouroListJSONResponse" message="tns:IServiceCWA_GetTipoLogradouroListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViewLogrEntityJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetViewLogrEntityJSON" message="tns:IServiceCWA_GetViewLogrEntityJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetViewLogrEntityJSONResponse" message="tns:IServiceCWA_GetViewLogrEntityJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCodRoteirizacaoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetCodRoteirizacaoJSON" message="tns:IServiceCWA_GetCodRoteirizacaoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetCodRoteirizacaoJSONResponse" message="tns:IServiceCWA_GetCodRoteirizacaoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParametroGlobalWEBJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetParametroGlobalWEBJSON" message="tns:IServiceCWA_GetParametroGlobalWEBJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetParametroGlobalWEBJSONResponse" message="tns:IServiceCWA_GetParametroGlobalWEBJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBandeiraCartaoListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetBandeiraCartaoListJSON" message="tns:IServiceCWA_GetBandeiraCartaoListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetBandeiraCartaoListJSONResponse" message="tns:IServiceCWA_GetBandeiraCartaoListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmCartaoListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetAdmCartaoListJSON" message="tns:IServiceCWA_GetAdmCartaoListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetAdmCartaoListJSONResponse" message="tns:IServiceCWA_GetAdmCartaoListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmCobraGateWayJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetAdmCobraGateWayJSON" message="tns:IServiceCWA_GetAdmCobraGateWayJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetAdmCobraGateWayJSONResponse" message="tns:IServiceCWA_GetAdmCobraGateWayJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBandeiraCartaoListNovoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetBandeiraCartaoListNovoJSON" message="tns:IServiceCWA_GetBandeiraCartaoListNovoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetBandeiraCartaoListNovoJSONResponse" message="tns:IServiceCWA_GetBandeiraCartaoListNovoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidarListaNegraJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetValidarListaNegraJSON" message="tns:IServiceCWA_GetValidarListaNegraJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetValidarListaNegraJSONResponse" message="tns:IServiceCWA_GetValidarListaNegraJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContabilContratoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetContabilContratoJSON" message="tns:IServiceCWA_GetContabilContratoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetContabilContratoJSONResponse" message="tns:IServiceCWA_GetContabilContratoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParametrosPlanoJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetParametrosPlanoJSON" message="tns:IServiceCWA_GetParametrosPlanoJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetParametrosPlanoJSONResponse" message="tns:IServiceCWA_GetParametrosPlanoJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoAssinaturaListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetTipoAssinaturaListJSON" message="tns:IServiceCWA_GetTipoAssinaturaListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetTipoAssinaturaListJSONResponse" message="tns:IServiceCWA_GetTipoAssinaturaListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoPagamentoListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetTipoPagamentoListJSON" message="tns:IServiceCWA_GetTipoPagamentoListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetTipoPagamentoListJSONResponse" message="tns:IServiceCWA_GetTipoPagamentoListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBancoDebitoListJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetBancoDebitoListJSON" message="tns:IServiceCWA_GetBancoDebitoListJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetBancoDebitoListJSONResponse" message="tns:IServiceCWA_GetBancoDebitoListJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GravarAssinaturaService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GravarAssinaturaService" message="tns:IServiceCWA_GravarAssinaturaService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GravarAssinaturaServiceResponse" message="tns:IServiceCWA_GravarAssinaturaService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GravarAbandonoService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GravarAbandonoService" message="tns:IServiceCWA_GravarAbandonoService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GravarAbandonoServiceResponse" message="tns:IServiceCWA_GravarAbandonoService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAbandonoLojaService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/GetAbandonoLojaService" message="tns:IServiceCWA_GetAbandonoLojaService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/GetAbandonoLojaServiceResponse" message="tns:IServiceCWA_GetAbandonoLojaService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailAPI">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceCWA/SendMailAPI" message="tns:IServiceCWA_SendMailAPI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceCWA/SendMailAPIResponse" message="tns:IServiceCWA_SendMailAPI_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceCWA" type="tns:IServiceCWA">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BRASPAG_VendaSimplesCartao">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/BRASPAG_VendaSimplesCartao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusContrato">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetStatusContrato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusContratoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetStatusContratoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLoginValidoMirante">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetLoginValidoMirante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarteiraClubeMiranteJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCarteiraClubeMiranteJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarteiraClubeMirante">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCarteiraClubeMirante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsomeWebServiceDinamico">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/ConsomeWebServiceDinamico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsomeApiQualityGoiania">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/ConsomeApiQualityGoiania" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersaoWS">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetVersaoWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BRASPAG_GetVendaMerchantOrderId">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/BRASPAG_GetVendaMerchantOrderId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BRASPAG_GetVendaPaymentId">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/BRASPAG_GetVendaPaymentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGeraNotaVA_GO">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/SetGeraNotaVA_GO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDadosContratoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetDadosContratoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRamoAtividadeJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetRamoAtividadeJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRamoAtividade">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetRamoAtividade" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboClientejcJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboClientejcJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboClientejc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboClientejc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboAssinaturajcJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboAssinaturajcJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboAssinaturajc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboAssinaturajc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboRecibojcJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboRecibojcJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboRecibojc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboRecibojc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdutojcJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboProdutojcJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdutojc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboProdutojc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdAgregjcJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboProdAgregjcJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboProdAgregjc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboProdAgregjc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboTipoRecJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboTipoRecJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboTiposRecjc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboTiposRecjc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboMovRecJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboMovRecJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCuboMovRecjc">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCuboMovRecjc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConteudoDestaque">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetConteudoDestaque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConteudoPromocao">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetConteudoPromocao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConteudoDetalhe">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetConteudoDetalhe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontarBannerDestaque">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetMontarBannerDestaque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRamoAtividadeListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetRamoAtividadeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrecoCampanhaPlanoProdutoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetPrecoCampanhaPlanoProdutoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoLogradouroListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetTipoLogradouroListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViewLogrEntityJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetViewLogrEntityJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCodRoteirizacaoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetCodRoteirizacaoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParametroGlobalWEBJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetParametroGlobalWEBJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBandeiraCartaoListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetBandeiraCartaoListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmCartaoListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetAdmCartaoListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmCobraGateWayJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetAdmCobraGateWayJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBandeiraCartaoListNovoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetBandeiraCartaoListNovoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidarListaNegraJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetValidarListaNegraJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContabilContratoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetContabilContratoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParametrosPlanoJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetParametrosPlanoJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoAssinaturaListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetTipoAssinaturaListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTipoPagamentoListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetTipoPagamentoListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBancoDebitoListJSON">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetBancoDebitoListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GravarAssinaturaService">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GravarAssinaturaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GravarAbandonoService">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GravarAbandonoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbandonoLojaService">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/GetAbandonoLojaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailAPI">
+      <soap:operation soapAction="http://tempuri.org/IServiceCWA/SendMailAPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceCWA">
+    <wsdl:port name="BasicHttpBinding_IServiceCWA" binding="tns:BasicHttpBinding_IServiceCWA">
+      <soap:address location="http://localhost:24098/ServiceCWA.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

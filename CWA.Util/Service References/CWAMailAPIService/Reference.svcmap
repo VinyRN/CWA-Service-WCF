@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="377045dc-b251-4a4a-9e80-4fd482028d49" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:24098/ServiceCWA.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceCWA.wsdl" MetadataType="Wsdl" ID="5d6eaba6-7eb2-43a3-be35-07d3c2abfa12" SourceId="1" SourceUrl="http://localhost:24098/ServiceCWA.svc?wsdl" />
+    <MetadataFile FileName="ServiceCWA.xsd" MetadataType="Schema" ID="fc1af78c-aca8-4ca1-99fc-2bef94b1032f" SourceId="1" SourceUrl="http://localhost:24098/ServiceCWA.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceCWA1.xsd" MetadataType="Schema" ID="d807709d-602e-4b01-bb29-592329f4a275" SourceId="1" SourceUrl="http://localhost:24098/ServiceCWA.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceCWA.disco" MetadataType="Disco" ID="5dfb56bd-58ea-41de-a980-cc6c4bac37a5" SourceId="1" SourceUrl="http://localhost:24098/ServiceCWA.svc?disco" />
+    <MetadataFile FileName="ServiceCWA2.xsd" MetadataType="Schema" ID="6fed2276-b0d3-4592-98ea-ec2fff046180" SourceId="1" SourceUrl="http://localhost:24098/ServiceCWA.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceCWA3.xsd" MetadataType="Schema" ID="03495741-a123-47fa-b022-a1b9db9d0e4e" SourceId="1" SourceUrl="http://localhost:24098/ServiceCWA.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

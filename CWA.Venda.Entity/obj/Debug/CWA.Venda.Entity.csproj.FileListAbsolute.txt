@@ -1,0 +1,15 @@
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\bin\Debug\CWA.Venda.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\bin\Debug\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.csprojResolveAssemblyReference.cache
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\bin\Debug\CWA.Venda.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\bin\Debug\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.csprojResolveAssemblyReference.cache
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.pdb
+C:\TEMP\Git\CWA.Venda.Entity\bin\Debug\CWA.Venda.Entity.dll
+C:\TEMP\Git\CWA.Venda.Entity\bin\Debug\CWA.Venda.Entity.pdb
+C:\TEMP\Git\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.csprojResolveAssemblyReference.cache
+C:\TEMP\Git\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.dll
+C:\TEMP\Git\CWA.Venda.Entity\obj\Debug\CWA.Venda.Entity.pdb

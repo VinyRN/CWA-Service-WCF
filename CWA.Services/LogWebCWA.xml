@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogSys>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao-ErrorGeral</Processo>
+    <Tipo>Error</Tipo>
+    <Erro>O índice e o comprimento devem se referir a um local dentro da cadeia de caracteres.
+Nome do parâmetro: length-</Erro>
+    <DataLog>12/09/2019 18:29:02</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao-ErrorGeral</Processo>
+    <Tipo>Error</Tipo>
+    <Erro>O índice e o comprimento devem se referir a um local dentro da cadeia de caracteres.
+Nome do parâmetro: length-</Erro>
+    <DataLog>12/09/2019 18:30:20</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao-ErrorGeral</Processo>
+    <Tipo>Error</Tipo>
+    <Erro>O índice e o comprimento devem se referir a um local dentro da cadeia de caracteres.
+Nome do parâmetro: length-</Erro>
+    <DataLog>12/09/2019 18:37:51</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao-ErrorGeral</Processo>
+    <Tipo>Error</Tipo>
+    <Erro>O índice e o comprimento devem se referir a um local dentro da cadeia de caracteres.
+Nome do parâmetro: length-</Erro>
+    <DataLog>12/09/2019 18:38:22</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>12/09/2019 18:39:28</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>12/09/2019 18:40:33</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A0104A3:016D276BBC92:4967:722F3587;6285000;123456;999;0;CAPTURED;;464692;821316;</Erro>
+    <DataLog>12/09/2019 18:40:33</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>12/09/2019 18:42:26</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>12/09/2019 18:42:30</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A0104A3:016D276D8442:D950:1D6E00A0;6285031;123456;999;0;CAPTURED;;441739;737355;</Erro>
+    <DataLog>12/09/2019 18:42:30</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>12/09/2019 18:49:18</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>12/09/2019 18:50:37</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A0104A3:016D2774A6D0:0310:2B3DE16F;6285150;123456;999;0;CAPTURED;;302210;524099;</Erro>
+    <DataLog>12/09/2019 18:50:37</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>12/09/2019 19:04:24</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>12/09/2019 19:04:30</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A0104A3:016D2781A8C9:ECD4:3FE5F4C4;6285367;123456;999;0;CAPTURED;;918772;1015461;</Erro>
+    <DataLog>12/09/2019 19:04:30</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>12/09/2019 19:05:27</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>12/09/2019 19:05:28</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A0104A3:016D27828A58:39C7:4EB5BF33;6285370;123456;999;0;CAPTURED;;479381;742598;</Erro>
+    <DataLog>12/09/2019 19:05:28</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Envio</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Venda,V00000000165,4111111111111111,07/2023,123,29.90,1,2</Erro>
+    <DataLog>28/10/2019 16:15:03</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>28/10/2019 16:15:03</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>28/10/2019 16:15:10</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A01049C:016E13CB25BB:BD82:777896F7;7069208;123456;V00000000165;0;CAPTURED;;171973;230889;</Erro>
+    <DataLog>28/10/2019 16:15:10</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>V,16,5,171973,7069208,123456,0A01049C:016E13CB25BB:BD82:777896F7,1,0</Erro>
+    <DataLog>28/10/2019 16:15:10</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Envio</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Venda,V00000010164,4551810001602686,03/2022,120,29.90,1,2</Erro>
+    <DataLog>31/10/2019 15:16:13</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:16:13</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao-ErrorGeral</Processo>
+    <Tipo>Error</Tipo>
+    <Erro>O servidor remoto retornou um erro: (502) Gateway Incorreto.-</Erro>
+    <DataLog>31/10/2019 15:16:21</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Erro-Rollback</Processo>
+    <Tipo>Error</Tipo>
+    <Erro>Venda,V00000010164,4551810001602686,03/2022,120,29.90,1,2 - Referência de objeto não definida para uma instância de um objeto.</Erro>
+    <DataLog>31/10/2019 15:16:21</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Envio</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Venda,V00000010175,4111111111111111,02/2023,100,99929.90,1,2</Erro>
+    <DataLog>31/10/2019 15:28:36</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:29:30</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:29:37</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A01049C:016E231487FC:21A0:48B82A84;7077092;123456;V00000010175;0;CAPTURED;;722692;266093;</Erro>
+    <DataLog>31/10/2019 15:29:37</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>V,1017,5,722692,7077092,123456,0A01049C:016E231487FC:21A0:48B82A84,1,0</Erro>
+    <DataLog>31/10/2019 15:29:50</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>GravarAssinatura-InterfacePagto-Envio</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Venda,V00000010176,4111111111111111,02/2023,100,29.90,1,2</Erro>
+    <DataLog>31/10/2019 15:31:09</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:31:11</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:31:11</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A01049C:016E2315F8B4:E42C:7FA560F4;7077095;123456;V00000010176;0;CAPTURED;;203762;910698;</Erro>
+    <DataLog>31/10/2019 15:31:11</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:31:49</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:31:50</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A01049C:016E23168EF0:24BF:50A65E29;7077097;123456;V00000010175;0;CAPTURED;;100642;860725;</Erro>
+    <DataLog>31/10/2019 15:31:50</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:32:17</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:32:18</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>0A01049C:016E2316FC63:EEA5:02EE21E1;7077098;123456;V00000010175;0;CAPTURED;;758553;983598;</Erro>
+    <DataLog>31/10/2019 15:32:18</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:32:51</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:32:51</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>;;;;1024;INVALID REQUEST;Transaction Amount has a maximum length of 19.;</Erro>
+    <DataLog>31/10/2019 15:32:51</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:33:11</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:33:11</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-TratarRetornoVendaSimplesMAXIPAGO-Retorno</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>;;;;1024;INVALID REQUEST;Transaction Amount is not a valid number in the range of 0.01 to 1.0E14.;</Erro>
+    <DataLog>31/10/2019 15:33:11</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Inicio do Processamento MAXIPAGO</Erro>
+    <DataLog>31/10/2019 15:33:30</DataLog>
+  </DadosLog>
+  <DadosLog>
+    <Processo>Service-MAXIPAGO_VendaSimplesCartao</Processo>
+    <Tipo>Info</Tipo>
+    <Erro>Fim do Processamento de Retorno MAXIPAGO</

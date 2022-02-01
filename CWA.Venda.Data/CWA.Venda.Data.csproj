@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE676033-0B66-4BA9-8DC3-357CB8C031F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWA.Venda.Data</RootNamespace>
+    <AssemblyName>CWA.Venda.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCargaWebCorreioData.cs" />
+    <Compile Include="clsAbandonoData.cs" />
+    <Compile Include="clsAdmCartaoData.cs" />
+    <Compile Include="clsAfinidadeData.cs" />
+    <Compile Include="clsBancoBoletoData.cs" />
+    <Compile Include="clsBancoDebitoData.cs" />
+    <Compile Include="clsBancoEditoraData.cs" />
+    <Compile Include="clsBoletoData.cs" />
+    <Compile Include="clsCampanhaData.cs" />
+    <Compile Include="clsCampanhaPlanoData.cs" />
+    <Compile Include="clsCampanhaPlanoWEBData.cs" />
+    <Compile Include="clsCampanhaPrecoData.cs" />
+    <Compile Include="clsCargoData.cs" />
+    <Compile Include="clsContratoAssinanteData.cs" />
+    <Compile Include="clsCuboAssinaturajcData.cs" />
+    <Compile Include="clsCuboClientejcData.cs" />
+    <Compile Include="clsCuboMovRecJCData.cs" />
+    <Compile Include="clsCuboProdAgregJCData.cs" />
+    <Compile Include="clsCuboProdutoJCData.cs" />
+    <Compile Include="clsCuboReciboJCData.cs" />
+    <Compile Include="clsCuboTiposRecJCData.cs" />
+    <Compile Include="clsDadosdoAssinanteData.cs" />
+    <Compile Include="clsDataContext.cs" />
+    <Compile Include="clsClubeAssinanteData.cs" />
+    <Compile Include="clsDataContextSQL.cs" />
+    <Compile Include="clsEmailAssinanteData.cs" />
+    <Compile Include="clsEstadoCivilData.cs" />
+    <Compile Include="clsExtraData.cs" />
+    <Compile Include="clsFormaExpedicaoData.cs" />
+    <Compile Include="clsFormaPagamentoData.cs" />
+    <Compile Include="clsGrauInstrucaoData.cs" />
+    <Compile Include="clsGravaAssinaturaData.cs" />
+    <Compile Include="clsGravaProdutoAgregData.cs" />
+    <Compile Include="clsGrupoAfinidadeData.cs" />
+    <Compile Include="clsItemProdutoData.cs" />
+    <Compile Include="clsListaNegraData.cs" />
+    <Compile Include="clsLogInterfaceWEBData.cs" />
+    <Compile Include="clsNacionalidadeData.cs" />
+    <Compile Include="clsNaturalidadeData.cs" />
+    <Compile Include="clsParametroGlobalData.cs" />
+    <Compile Include="clsPessoaContratoData.cs" />
+    <Compile Include="clsPlanoComercialData.cs" />
+    <Compile Include="clsPrecoProdutoAgregData.cs" />
+    <Compile Include="clsProdutoData.cs" />
+    <Compile Include="clsProfissaoData.cs" />
+    <Compile Include="clsRamoAtividadeData.cs" />
+    <Compile Include="clsRedeSocialData.cs" />
+    <Compile Include="clsSexoData.cs" />
+    <Compile Include="clsTelefoneAssinanteData.cs" />
+    <Compile Include="clsTipoAssinaturaData.cs" />
+    <Compile Include="clsTipoAssinaturaEntregaData.cs" />
+    <Compile Include="clsTipoEmailData.cs" />
+    <Compile Include="clsTipoEntregaData.cs" />
+    <Compile Include="clsTipoJuridicoData.cs" />
+    <Compile Include="clsTipoLogrData.cs" />
+    <Compile Include="clsTipoPagamentoData.cs" />
+    <Compile Include="clsUsuarioLoginData.cs" />
+    <Compile Include="clsViewLogrData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CWA.Central.Entity\CWA.Central.Entity.csproj">
+      <Project>{ef7dcd6a-83f4-4a1c-8172-4408b80377da}</Project>
+      <Name>CWA.Central.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.Util\CWA.Util.csproj">
+      <Project>{dda97fd6-3684-4330-8f70-6cda5166a1fa}</Project>
+      <Name>CWA.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.Venda.Entity\CWA.Venda.Entity.csproj">
+      <Project>{4d350992-03ce-4198-b2f0-2e8347b38426}</Project>
+      <Name>CWA.Venda.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

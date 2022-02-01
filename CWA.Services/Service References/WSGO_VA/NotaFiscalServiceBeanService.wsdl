@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.integraCir2k.gjc.com.br/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="NotaFiscalServiceBeanService" targetNamespace="http://service.integraCir2k.gjc.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.integraCir2k.gjc.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="baixarTitulo" type="tns:baixarTitulo" />
+      <xs:element name="baixarTituloResponse" type="tns:baixarTituloResponse" />
+      <xs:element name="cabecalhoNotaVO" type="tns:cabecalhoNotaVO" />
+      <xs:element name="duplicataNotaVO" type="tns:duplicataNotaVO" />
+      <xs:element name="gerarNota" type="tns:gerarNota" />
+      <xs:element name="gerarNotaResponse" type="tns:gerarNotaResponse" />
+      <xs:element name="itemNotaVO" type="tns:itemNotaVO" />
+      <xs:element name="mensagemListVO" type="tns:mensagemListVO" />
+      <xs:element name="mensagemVO" type="tns:mensagemVO" />
+      <xs:element name="notaTituloVO" type="tns:notaTituloVO" />
+      <xs:element name="notaVO" type="tns:notaVO" />
+      <xs:element name="representanteVO" type="tns:representanteVO" />
+      <xs:element name="retornarNotasCir" type="tns:retornarNotasCir" />
+      <xs:element name="retornarNotasCirResponse" type="tns:retornarNotasCirResponse" />
+      <xs:element name="retornarValidacaoNota" type="tns:retornarValidacaoNota" />
+      <xs:element name="retornarValidacaoNotaResponse" type="tns:retornarValidacaoNotaResponse" />
+      <xs:complexType name="gerarNota">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cabecalhoNotaVOList" type="tns:cabecalhoNotaVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cabecalhoNotaVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idNota" type="xs:int" />
+              <xs:element minOccurs="0" name="cdCNPJCliente" type="xs:string" />
+              <xs:element minOccurs="0" name="cdCNPJTransportador" type="xs:string" />
+              <xs:element minOccurs="0" name="cdCodigoEstabelecimento" type="xs:string" />
+              <xs:element minOccurs="0" name="cdCodigoUsuario" type="xs:string" />
+              <xs:element minOccurs="0" name="clTipoNotaFiscal" type="xs:int" />
+              <xs:element minOccurs="0" name="clTipoVenda" type="xs:int" />
+              <xs:element minOccurs="0" name="dsSerie" type="xs:string" />
+              <xs:element minOccurs="0" name="nrNotaOrig" type="xs:string" />
+              <xs:element minOccurs="0" name="dtEdicao" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="clDestinoTiragem" type="xs:int" />
+              <xs:element minOccurs="0" name="representante" type="tns:representanteVO" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="itemNota" type="tns:itemNotaVO" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="duplicataNota" type="tns:duplicataNotaVO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="abstractVO" abstract="true">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:complexType name="representanteVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idNota" type="xs:int" />
+              <xs:element minOccurs="0" name="cdClassificador" type="xs:int" />
+              <xs:element minOccurs="0" name="cdCodigoRepresentante" type="xs:string" />
+              <xs:element minOccurs="0" name="dsSequencia" type="xs:int" />
+              <xs:element minOccurs="0" name="pcComissao" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlComissao" type="xs:decimal" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="itemNotaVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idNota" type="xs:int" />
+              <xs:element minOccurs="0" name="cdCodigoItem" type="xs:string" />
+              <xs:element minOccurs="0" name="cdNumeroSequencia" type="xs:int" />
+              <xs:element minOccurs="0" name="codTabelaPreco" type="xs:string" />
+              <xs:element minOccurs="0" name="dsUnidade" type="xs:string" />
+              <xs:element minOccurs="0" name="vlValorLiquido" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlValorOriginal" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlValorTabela" type="xs:decimal" />
+              <xs:element minOccurs="0" name="quantidade" type="xs:decimal" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="duplicataNotaVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idNota" type="xs:int" />
+              <xs:element minOccurs="0" name="cdCodigoEspecie" type="xs:string" />
+              <xs:element minOccurs="0" name="cdCodigoVencimento" type="xs:int" />
+              <xs:element minOccurs="0" name="codSeqDocto" type="xs:int" />
+              <xs:element minOccurs="0" name="dsParcela" type="xs:string" />
+              <xs:element minOccurs="0" name="dtDesconto" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="dtVencimento" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="vlAcumulado" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlComissao" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlDesconto" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlParcelar" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlSaldo" type="xs:decimal" />
+              <xs:element minOccurs="0" name="qtdSaldo" type="xs:decimal" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="gerarNotaResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="mensagemVOList" type="tns:mensagemVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mensagemVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idMensagem" type="xs:int" />
+              <xs:element minOccurs="0" name="clTipo" type="xs:int" />
+              <xs:element minOccurs="0" name="dsDescricao" type="xs:string" />
+              <xs:element minOccurs="0" name="dsOrigem" type="xs:int" />
+              <xs:element minOccurs="0" name="dtEnvio" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="nota" type="tns:notaVO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="notaVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idNota" type="xs:int" />
+              <xs:element minOccurs="0" name="idMensagem" type="xs:int" />
+              <xs:element minOccurs="0" name="cdCodigoEstabelecimento" type="xs:string" />
+              <xs:element minOccurs="0" name="dsSerie" type="xs:string" />
+              <xs:element minOccurs="0" name="cdChaveAcesso" type="xs:string" />
+              <xs:element minOccurs="0" name="cdLocalDep" type="xs:string" />
+              <xs:element minOccurs="0" name="cdLocalPag" type="xs:string" />
+              <xs:element minOccurs="0" name="cdOrigemRecibo" type="xs:int" />
+              <xs:element minOccurs="0" name="cdParcela" type="xs:string" />
+              <xs:element minOccurs="0" name="cdRecibo" type="xs:string" />
+              <xs:element minOccurs="0" name="clSituacao" type="xs:int" />
+              <xs:element minOccurs="0" name="clTpMovimento" type="xs:int" />
+              <xs:element minOccurs="0" name="dsUsr" type="xs:string" />
+              <xs:element minOccurs="0" name="dtCredito" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="dtMov" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="dtTransacao" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="dvRecibo" type="xs:string" />
+              <xs:element minOccurs="0" name="vlDesconto" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlJuros" type="xs:decimal" />
+              <xs:element minOccurs="0" name="vlPago" type="xs:decimal" />
+              <xs:element minOccurs="0" name="nrNotaFis" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="notaTitulo" type="tns:notaTituloVO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="notaTituloVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idNota" type="xs:int" />
+              <xs:element minOccurs="0" name="cdSequencia" type="xs:int" />
+              <xs:element minOccurs="0" name="cdTituloACR" type="xs:string" />
+              <xs:element minOccurs="0" name="clStatus" type="xs:int" />
+              <xs:element minOccurs="0" name="dtPagto" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="vlPago" type="xs:decimal" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="retornarValidacaoNota">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="xmlMensagemVO" type="tns:mensagemVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retornarValidacaoNotaResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mensagem" type="tns:mensagemVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="baixarTitulo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="xmlMensagemVO" type="tns:mensagemVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="baixarTituloResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mensagem" type="tns:mensagemVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="retornarNotasCir">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="xmlMensagemString" type="tns:mensagemListVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="mensagemListVO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:abstractVO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="mensagemVO" nillable="true" type="tns:mensagemVO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="retornarNotasCirResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mensagem" type="tns:mensagemListVO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="Exception" type="tns:Exception" />
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="baixarTituloResponse">
+    <wsdl:part name="parameters" element="tns:baixarTituloResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarNotasCirResponse">
+    <wsdl:part name="parameters" element="tns:retornarNotasCirResponse" />
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="tns:Exception" />
+  </wsdl:message>
+  <wsdl:message name="retornarValidacaoNota">
+    <wsdl:part name="parameters" element="tns:retornarValidacaoNota" />
+  </wsdl:message>
+  <wsdl:message name="gerarNotaResponse">
+    <wsdl:part name="parameters" element="tns:gerarNotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="gerarNota">
+    <wsdl:part name="parameters" element="tns:gerarNota" />
+  </wsdl:message>
+  <wsdl:message name="retornarValidacaoNotaResponse">
+    <wsdl:part name="parameters" element="tns:retornarValidacaoNotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="baixarTitulo">
+    <wsdl:part name="parameters" element="tns:baixarTitulo" />
+  </wsdl:message>
+  <wsdl:message name="retornarNotasCir">
+    <wsdl:part name="parameters" element="tns:retornarNotasCir" />
+  </wsdl:message>
+  <wsdl:portType name="NotaFiscalServiceBean">
+    <wsdl:operation name="gerarNota">
+      <wsdl:input name="gerarNota" message="tns:gerarNota" />
+      <wsdl:output name="gerarNotaResponse" message="tns:gerarNotaResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarValidacaoNota">
+      <wsdl:input name="retornarValidacaoNota" message="tns:retornarValidacaoNota" />
+      <wsdl:output name="retornarValidacaoNotaResponse" message="tns:retornarValidacaoNotaResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="baixarTitulo">
+      <wsdl:input name="baixarTitulo" message="tns:baixarTitulo" />
+      <wsdl:output name="baixarTituloResponse" message="tns:baixarTituloResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarNotasCir">
+      <wsdl:input name="retornarNotasCir" message="tns:retornarNotasCir" />
+      <wsdl:output name="retornarNotasCirResponse" message="tns:retornarNotasCirResponse" />
+      <wsdl:fault name="Exception" message="tns:Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NotaFiscalServiceBeanServiceSoapBinding" type="tns:NotaFiscalServiceBean">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="gerarNota">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="gerarNota">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="gerarNotaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retornarValidacaoNota">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="retornarValidacaoNota">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retornarValidacaoNotaResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="baixarTitulo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="baixarTitulo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="baixarTituloResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retornarNotasCir">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="retornarNotasCir">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="retornarNotasCirResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NotaFiscalServiceBeanService">
+    <wsdl:port name="NotaFiscalServiceBeanPort" binding="tns:NotaFiscalServiceBeanServiceSoapBinding">
+      <soap:address location="http://10.200.0.42:8080/integraCir2k/NotaFiscalServiceBean" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

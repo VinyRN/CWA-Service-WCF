@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC361100-1DE0-4BE2-B7FA-B8F1D4AA59CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CWA.Central.Business</RootNamespace>
+    <AssemblyName>CWA.Central.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAfinidadeAssinante.cs" />
+    <Compile Include="clsCargo.cs" />
+    <Compile Include="clsContratoAssinante.cs" />
+    <Compile Include="clsDadosDoAssinante.cs" />
+    <Compile Include="clsEmailAssinante.cs" />
+    <Compile Include="clsEstadoCivil.cs" />
+    <Compile Include="clsGrauInstrucao.cs" />
+    <Compile Include="clsGrupoAfinidade.cs" />
+    <Compile Include="clsNacionalidade.cs" />
+    <Compile Include="clsNaturalidade.cs" />
+    <Compile Include="clsProfissao.cs" />
+    <Compile Include="clsRamoAtividade.cs" />
+    <Compile Include="clsTelefoneAssinante.cs" />
+    <Compile Include="clsTipoEmail.cs" />
+    <Compile Include="clsUsuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="clsRedeSocial.cs" />
+    <Compile Include="Service References\CWAService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.ClubeAssinanteEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboAssinaturaJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboClienteJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboMovRecJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboProdAgregJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboProdutoJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboReciboJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.CuboTiposRecJCEntity.datasource" />
+    <None Include="Properties\DataSources\CWA.Venda.Entity.RamoAtividadeEntity.datasource" />
+    <None Include="Service References\CWAService\ServiceCWA.wsdl" />
+    <None Include="Service References\CWAService\ServiceCWA.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWAService\ServiceCWA1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWAService\ServiceCWA2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWAService\ServiceCWA3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CWA.Central.Domain\CWA.Central.Domain.csproj">
+      <Project>{2f9570ba-938e-43e6-a438-6d96d040f55d}</Project>
+      <Name>CWA.Central.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.Central.Entity\CWA.Central.Entity.csproj">
+      <Project>{ef7dcd6a-83f4-4a1c-8172-4408b80377da}</Project>
+      <Name>CWA.Central.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.EngineServices\CWA.EngineServices.csproj">
+      <Project>{262e88f4-ce65-4b22-8e7f-3193ea603104}</Project>
+      <Name>CWA.EngineServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.Util\CWA.Util.csproj">
+      <Project>{dda97fd6-3684-4330-8f70-6cda5166a1fa}</Project>
+      <Name>CWA.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.Venda.Data\CWA.Venda.Data.csproj">
+      <Project>{ce676033-0b66-4ba9-8dc3-357cb8c031f0}</Project>
+      <Name>CWA.Venda.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CWA.Venda.Entity\CWA.Venda.Entity.csproj">
+      <Project>{4d350992-03ce-4198-b2f0-2e8347b38426}</Project>
+      <Name>CWA.Venda.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CWAService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CWAService\ServiceCWA.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CWAService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CWAService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CWAService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

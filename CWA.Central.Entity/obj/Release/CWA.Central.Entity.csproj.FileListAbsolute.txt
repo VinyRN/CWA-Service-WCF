@@ -1,0 +1,9 @@
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\bin\Release\CWA.Central.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\bin\Release\CWA.Central.Entity.pdb
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\obj\Release\CWA.Central.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Central.Entity\obj\Release\CWA.Central.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Central.Entity\bin\Release\CWA.Central.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Central.Entity\bin\Release\CWA.Central.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Central.Entity\obj\Release\CWA.Central.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Central.Entity\obj\Release\CWA.Central.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Central.Entity\obj\Release\CWA.Central.Entity.csprojResolveAssemblyReference.cache

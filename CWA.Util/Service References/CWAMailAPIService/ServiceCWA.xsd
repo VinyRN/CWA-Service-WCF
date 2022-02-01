@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CWA.Venda.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ClubeAssinanteEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ANO_TERMINO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CD_CONTABIL_PESSOA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MES_TERMINO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_DEPENDENTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_PESSOA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_PRODUTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CTR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_DOC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_DV_CTR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_SERIE_CTR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_TP_PESSOA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClubeAssinanteEntity" nillable="true" type="tns:ClubeAssinanteEntity" />
+  <xs:complexType name="ArrayOfRamoAtividadeEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RamoAtividadeEntity" nillable="true" type="tns:RamoAtividadeEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRamoAtividadeEntity" nillable="true" type="tns:ArrayOfRamoAtividadeEntity" />
+  <xs:complexType name="RamoAtividadeEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_RAMO" type="xs:int" />
+      <xs:element minOccurs="0" name="DS_RAMO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RamoAtividadeEntity" nillable="true" type="tns:RamoAtividadeEntity" />
+  <xs:complexType name="ArrayOfCuboClienteJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboClienteJCEntity" nillable="true" type="tns:CuboClienteJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboClienteJCEntity" nillable="true" type="tns:ArrayOfCuboClienteJCEntity" />
+  <xs:complexType name="CuboClienteJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CNPJ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COD_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="COMPL_ENDERECO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DDD_CEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DDD_COM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DDD_RES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_ESTADO_CIVIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_PROFISSAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_CADASTRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_NASCIMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ESTADO_UF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FONE_CEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FONE_COM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FONE_RES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOME_BAIRRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOME_CLIENTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOME_FANTASIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOME_LOGRAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOME_MUNICIPIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUM_RESID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_APARTAMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_BLOCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_CLIENTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TP_LOGRAD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboClienteJCEntity" nillable="true" type="tns:CuboClienteJCEntity" />
+  <xs:complexType name="ArrayOfCuboAssinaturaJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboAssinaturaJCEntity" nillable="true" type="tns:CuboAssinaturaJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboAssinaturaJCEntity" nillable="true" type="tns:ArrayOfCuboAssinaturaJCEntity" />
+  <xs:complexType name="CuboAssinaturaJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COD_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="COD_PRODUTO" type="xs:int" />
+      <xs:element minOccurs="0" name="CONTRATO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_GRUPO_ENTREGA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_TP_ASS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_TP_PAGTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_TP_VENDA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_ATIVACAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_CANC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_FINAL_ASS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_INICIO_ASS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_VENDA_ASS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_PERIODO" type="xs:int" />
+      <xs:element minOccurs="0" name="PLANO_COMERCIAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTD_EXEMPLARES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_ASSINATURA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_CORPORATIVO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboAssinaturaJCEntity" nillable="true" type="tns:CuboAssinaturaJCEntity" />
+  <xs:complexType name="ArrayOfCuboReciboJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboReciboJCEntity" nillable="true" type="tns:CuboReciboJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboReciboJCEntity" nillable="true" type="tns:ArrayOfCuboReciboJCEntity" />
+  <xs:complexType name="CuboReciboJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COD_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="CONTRATO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_BAIXA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_VENCIMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_PARCELA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_RECIBO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_PARCELA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VA_PARCELA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboReciboJCEntity" nillable="true" type="tns:CuboReciboJCEntity" />
+  <xs:complexType name="ArrayOfCuboProdutoJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboProdutoJCEntity" nillable="true" type="tns:CuboProdutoJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboProdutoJCEntity" nillable="true" type="tns:ArrayOfCuboProdutoJCEntity" />
+  <xs:complexType name="CuboProdutoJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COD_PRODUTO" type="xs:int" />
+      <xs:element minOccurs="0" name="DESC_PRODUTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_TP_PRODUTO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboProdutoJCEntity" nillable="true" type="tns:CuboProdutoJCEntity" />
+  <xs:complexType name="ArrayOfCuboProdAgregJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboProdAgregJCEntity" nillable="true" type="tns:CuboProdAgregJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboProdAgregJCEntity" nillable="true" type="tns:ArrayOfCuboProdAgregJCEntity" />
+  <xs:complexType name="CuboProdAgregJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_ITEM_PRODUTO" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_PRODUTO" type="xs:int" />
+      <xs:element minOccurs="0" name="COD_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="CONTRATO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_TP_PAGAMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_VENDA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_RECIBO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QTD_PRODUTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_ASSINATURA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboProdAgregJCEntity" nillable="true" type="tns:CuboProdAgregJCEntity" />
+  <xs:complexType name="ArrayOfCuboTiposRecJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboTiposRecJCEntity" nillable="true" type="tns:CuboTiposRecJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboTiposRecJCEntity" nillable="true" type="tns:ArrayOfCuboTiposRecJCEntity" />
+  <xs:complexType name="CuboTiposRecJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_MOTIVO_RECLAMACAO" type="xs:int" />
+      <xs:element minOccurs="0" name="DS_MOTIVO_RECLAMACAO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboTiposRecJCEntity" nillable="true" type="tns:CuboTiposRecJCEntity" />
+  <xs:complexType name="ArrayOfCuboMovRecJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CuboMovRecJCEntity" nillable="true" type="tns:CuboMovRecJCEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCuboMovRecJCEntity" nillable="true" type="tns:ArrayOfCuboMovRecJCEntity" />
+  <xs:complexType name="CuboMovRecJCEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_MOTIVO_RECLAMACAO" type="xs:int" />
+      <xs:element minOccurs="0" name="COD_CLIENTE" type="xs:int" />
+      <xs:element minOccurs="0" name="CONTRATO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_EDICAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_MOV" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CuboMovRecJCEntity" nillable="true" type="tns:CuboMovRecJCEntity" />
+  <xs:complexType name="ListaNegraEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_LOGR" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_PESSSOA" type="xs:int" />
+      <xs:element minOccurs="0" name="COMPL_RESID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_AGENCIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_APTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_BANCO" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_BLOCO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CARTAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CONTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CPF_CNPJ" type="xs:double" />
+      <xs:element minOccurs="0" name="NU_RESID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListaNegraEntity" nillable="true" type="tns:ListaNegraEntity" />
+  <xs:complexType name="DadosPessoaEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ALTERAR_DADOS" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_GRUPO_SELECAO" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_LOCAL_ENTREGA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_RAMO_ATV" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_REPR_VENDA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_VENDEDOR" type="xs:int" />
+      <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_NOME_EMPRESA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_NOME_RESP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_SENHA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_SOBRE_NOME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_NASC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_FANTASIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CNPJ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CPF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CPF_RESP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_DDDCEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_DDDTEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_IE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_IM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_AUTORIZA_EMAIL" type="xs:int" />
+      <xs:element minOccurs="0" name="ST_IND_DIVULGACAO" type="xs:int" />
+      <xs:element minOccurs="0" name="TIPO_PARC_CARTAO" type="xs:int" />
+      <xs:element minOccurs="0" name="TP_PESSOA" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DadosPessoaEntity" nillable="true" type="tns:DadosPessoaEntity" />
+  <xs:complexType name="DadosEntregaEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_TIPO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_BAIRRO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_COMPL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_LOGR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_MUNICIPIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_TIPO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_UF" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_LOGR" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_CEP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_RESID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DadosEntregaEntity" nillable="true" type="tns:DadosEntregaEntity" />
+  <xs:complexType name="DadosPagamentoEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD_CAMPANHA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_FONTE_COBRANCA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_FORMA_PAG" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_PLANO" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_PRODUTO" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_TP_ASSINATURA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_TP_BANDEIRA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_TP_ENTREGA" type="xs:int" />
+      <xs:element minOccurs="0" name="CD_TP_FORMA_PAG" type="xs:int" />
+      <xs:element minOccurs="0" name="CHAVE_CRYPT_CC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPFCNPJ_DEB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_VALID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DV_AGENCIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DV_CONTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MELHOR_DIA_CARTAO" type="xs:int" />
+      <xs:element minOccurs="0" name="MELHOR_DIA_DEBITO" type="xs:int" />
+      <xs:element minOccurs="0" name="NM_BANDEIRA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_PESSOA_CARTAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NM_RESP_CONTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_AGENCIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_BANCO" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_CARTAO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CONTA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_CVV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_PARCELA" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DadosPagamentoEntity" nillable="true" type="tns:DadosPagamentoEntity" />
+  <xs:complexType name="AbandonoEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DS_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_REG_ENDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DS_REG_PESSOA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DT_LOG" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HR_LOG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_LOG" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_CTR" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_DOC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_DV_CTR" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_SERIE_CTR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_STATUS" type="xs:int" />
+      <xs:element minOccurs="0" name="TP_ETAPA" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AbandonoEntity" nillable="true" type="tns:AbandonoEntity" />
+</xs:schema>

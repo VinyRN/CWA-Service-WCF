@@ -1,0 +1,9 @@
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\bin\Release\CWA.Venda.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\bin\Release\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\obj\Release\CWA.Venda.Entity.dll
+C:\PROJETOS\CWA_WEB\CWACentral\CWA.Venda.Entity\obj\Release\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\bin\Release\CWA.Venda.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\bin\Release\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\obj\Release\CWA.Venda.Entity.dll
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\obj\Release\CWA.Venda.Entity.pdb
+C:\PROJETOS\CWACentral\CWA.Venda.Entity\obj\Release\CWA.Venda.Entity.csprojResolveAssemblyReference.cache
